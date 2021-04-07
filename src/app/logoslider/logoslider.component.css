@@ -1,0 +1,7 @@
+.slide.slick-slide {
+    padding: 0 25px;
+}
+.slick-list.draggable .slick-track{
+    display: flex;
+    align-items: center;
+}

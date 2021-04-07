@@ -1,0 +1,53 @@
+.imgBox{
+    position: absolute;
+    width: 95px;
+    top: 21%;
+    left: 42%;
+}
+hr{
+    margin-top: 2px;
+}
+h4{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.rocket{
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.tile p{
+    font-size: 9px;
+    color: #aeaeae;
+}
+.black{
+    color: #000;
+}
+
+@media(max-width:992px){
+    .imgBox{
+        width: 75px;
+        top: 21%;
+        left: 40%;
+    }
+}
+
+@media(max-width:768px){
+    .imgBox{
+        width: 70px;
+        top: 21%;
+          left: 38%;
+    }
+}
+
+@media(max-width:576px){
+    .imgBox{
+        width: 67px;
+        top: 21%;
+        left: 39%;
+    }
+    h4{
+        text-align: center;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="container mt-5 pt-sm-4">
+    <div class="text-left">
+        <h4>Explore</h4>
+    </div>
+    <div class="row box-row">
+        <div class="col-sm-4 col-11 boxtabs mb-4">
+           <span>Read</span>
+           <span>Watch</span>
+           <span>Courses</span>
+           <span>Learn</span>
+        </div>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%">
+
+            <div class="details mt-2">
+            <p class="mb-1 textWhite">August 30, 2020</p>
+            <h5 class="mb-1">The best ESPORTS games 2020</h5>
+            <p class="d-flex justify-content-between mr-4 textTwo">If you dream of becoming a professional video game player…</p>
+            <p>
+                <img [src]="authorImg" class="author" alt="author">
+                <span class="ml-3 textWhite">Sharad Kad</span></p>
+             <hr>
+             <p ><span><i class="fa fa-thumbs-o-up mr-2" aria-hidden="true"></i></span>  <span class="text-dark textWhite mr-1">44</span> <span class="textWhite" >Likes</span></p>
+            </div>
+            
+        </div>
+
+    </ngx-slick-carousel>
+</div>

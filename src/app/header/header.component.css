@@ -1,0 +1,12 @@
+i.fa.fa-sign-in.mr-2 {
+    color: #053c83;
+}
+
+p{
+    font-size: 12px;
+}
+@media(max-width:576px){
+    p {
+        font-size: 10px;
+    }
+}

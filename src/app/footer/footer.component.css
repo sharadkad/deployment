@@ -1,0 +1,25 @@
+
+.footerlinks{
+    justify-content: space-evenly;
+}
+
+.footerlinks a{
+    font-size: 10px;
+    text-transform: uppercase;
+    color:#6e6e6e;
+}
+hr{
+    border-top: 1px solid #0000004f;
+}
+
+@media(max-width:576px){
+    .row-flex{
+        justify-content: center;
+    }
+    .footerlinks a{
+        font-size: 8px;
+    }
+    span{
+        margin: 0 8px;
+    }
+}

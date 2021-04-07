@@ -1,0 +1,117 @@
+table {
+    width: 100%;
+  }
+
+  .table thead th{
+      font-size: 9px;
+      text-transform: uppercase;
+  }
+
+  .table td{
+      font-size: 12px;
+  }
+  i.fa.fa-trophy{
+      margin-right: 10px;
+  }
+  i.fa.fa-trophy.gold{
+      color: #ffb11e;
+  }
+  i.fa.fa-trophy.silver{
+      color: #747986;
+  }
+  i.fa.fa-trophy.bronz{
+      color: #a85331;
+  }
+  .table img{
+      width:25px;
+      height: 25px;
+      margin-right: 12px;
+  }
+
+  ::ng-deep mat-tab-header.mat-tab-header{
+      border-bottom: none;
+  }
+
+  ::ng-deep  .mat-tab-label.mat-focus-indicator.mat-ripple.mat-tab-label-active.ng-star-inserted{
+    border-bottom:none
+  }
+
+  h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.boxtabs span{
+    color: #00000073;
+}
+.boxtabs span:not(:last-child){
+    margin-right: 30px;
+}
+.author{
+    width:25px;
+    height: 25px;
+    display: inline-block;
+}
+.boxtabs span:first-child{
+    color:#053c83;
+    font-weight: 500;
+}
+
+.boxtabs span{
+    font-size: 10px;
+}
+
+.table-responsive{
+    display: table;
+}
+.d-block.btn.btn-primary{
+    text-align: left;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0%;
+    border: none;
+    padding: 13px 20px;
+}
+
+span.thinText{
+    font-size: 9px;
+}
+span.boldText{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 25px;
+}
+
+.title{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+.scorecard{
+    border-bottom:0.5px solid #e6e6e6;
+    padding: 10px 0;
+    border-right: 3px solid #cccccc;
+}
+.scorecard:nth-of-type(1){
+    border-right: 3px solid #d21216;
+}
+.scorecard:last-child{
+    border-bottom:none
+}
+@media(max-width:576px){
+    .table-responsive{
+        display:block
+    }
+    .box-row{
+        justify-content: center;
+    }
+
+    h4{
+        text-align: center;
+    }
+}

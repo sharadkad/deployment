@@ -1,0 +1,54 @@
+<div class="container mt-5 pt-sm-4">
+    <div class="text-left">
+        <h4>Scores & Leaderboard</h4>
+    </div>
+    <div class="row box-row">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-10 boxtabs">
+           <span>Rocket Legaue</span>
+           <span>Fifa21</span>
+           <span>Valorant</span>
+           <span>Fortnite</span>
+        </div>
+    </div>
+
+    <div class="row mt-4 justify-content-center">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-10">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player name</th>
+                        <th>Region</th>
+                        <th colspan="3">Trophies</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ele of dataSource; let in = index">
+                        <td>{{ele.rank}} </td>
+                        <td class="d-flex align-items-center"> <span><img [src]="ele.img" alt=""> </span> {{ele.name}}</td>
+                        <td>{{ele.region}}</td>
+                        <td><i class="fa fa-trophy gold" aria-hidden="true"></i><span>{{ele.trophies.gold}}</span></td>
+                        <td><i class="fa fa-trophy silver" aria-hidden="true"></i>{{ele.trophies.silver}}</td>
+                        <td><i class="fa fa-trophy bronz" aria-hidden="true"></i>{{ele.trophies.bronz}}</td>
+                        <td>{{ele.points}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-4 col-sm-8 col-8 mt-md-0 mt-sm-2">
+        <h6 class="d-block btn btn-primary mb-0">Score tracker</h6>
+        <div class="scorecard text-left" *ngFor="let teams of scoreData">
+            <p class="title mb-1">{{teams.title}}</p>
+            <div class="d-flex align-items-center">
+                <span class="thinText" [innerHtml]="teams.team1"></span>
+                <span class="boldText mlr-4">{{teams.score}}</span>
+                <span class="thinText" [innerHtml]="teams.team1"></span>
+            </div>
+        </div>
+       
+        </div>
+
+    </div>
+</div>

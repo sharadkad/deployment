@@ -1,0 +1,34 @@
+.dashboard h4{
+    color: #000;
+    font-size: 1.81935vw;
+    line-height: 2.56410vw;
+    font-weight: 700;
+}
+.dashboard p{
+    font-size: 10px
+}
+
+.btn.btn-white{
+    background: white;
+    color: blue;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius:0%
+}
+
+.btn span{
+    color: red;
+}
+.textBox{
+    width:75%
+}
+@media(max-width:576px){
+    .dashboard h4{
+        font-size: 4.68750vw;
+        line-height: 6.5641vw;
+    }
+    .textBox{
+        width:76%;
+        margin: auto;
+    }
+}

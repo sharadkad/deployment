@@ -1,0 +1,127 @@
+.mainContainer{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    border-top: 1px solid #f7f7f7;
+}
+.wrapper{
+    width: 95%;
+    border-left: 1px solid #f7f7f7;
+}
+.authorImg{
+    width: 36px;
+    height: 36px;
+}
+.authordetails h4{
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.authordetails p{
+    font-size: 9px;
+    color: #999999;
+    line-height: 3px;
+}
+
+.boxtabs span{
+    color: #00000073;
+}
+.boxtabs span:not(:last-child){
+    margin-right: 30px;
+}
+.author{
+    width:25px;
+    height: 25px;
+    display: inline-block;
+}
+.boxtabs span:first-child{
+    color:#053c83;
+    font-weight: 500;
+}
+
+.boxtabs span{
+    font-size: 10px;
+}
+.boxes img{
+    width: 30px;
+}
+.boxes{
+    border-right: 2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3;
+    border-top: 2px solid #f3f3f3;
+}
+.headbox{
+    border-right: 2px solid #f3f3f3;
+    border-top: 2px solid #f3f3f3;
+}
+.title{
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 9px;
+    text-transform: uppercase;
+}
+.score span{
+    font-size: 13px;
+    font-weight: 600;
+}
+.blueColor{
+    color:#053c83;
+}
+
+.head{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600
+}
+
+.date{
+    font-size: 10px;
+}
+.scorebox{
+    border-right:2px solid #f3f3f3;
+}
+.scorebox:last-child{
+    border-right:none;
+}
+p.city{
+    font-size: 8px;
+    color:#aeaeae;
+    line-height: 8px;
+}
+
+.tournament{
+    border-bottom: 2px solid #f3f3f3;
+}
+
+@media(max-width:992px){
+    .wrapper{
+        width: 93%;   
+     }
+}
+
+@media(max-width:768px){
+    .wrapper{
+        width: 100%;   
+     }
+     .mainContainer{
+         margin-top: 10px;
+     }
+
+     .headbox{
+         border:none;
+         width: 50%;
+         margin: auto;
+     }
+}
+
+@media(max-width:576px){
+    .scorebox{
+        border-right: none;
+        border-bottom:2px solid #f3f3f3;
+        margin: auto;
+        padding: 15px 0;
+    }
+    .scorebox:last-child{
+        border-bottom:none
+    }
+}

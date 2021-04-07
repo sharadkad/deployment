@@ -1,0 +1,21 @@
+<div class="position-relative mt-3">
+<div class="mainContainer">
+<div class="wrapper">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.image }}" class="w-100" alt="">
+          <div class="col-sm-5 textContainer">
+            <h4>Do you have what it takes to be an all time.</h4>
+            <a href="#" class="btn btn-primary mt-md-3 mt-2">JOIN NOW</a>
+        </div>
+      </div>
+  </ngx-slick-carousel>
+</div>
+</div>
+
+<div class="leftnav">
+<div *ngFor="let img of images" class="d-flex justify-content-center logos">
+  <img src="{{ img.img }}"  alt="logo images">
+</div>
+</div>
+</div>

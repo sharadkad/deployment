@@ -1,0 +1,23 @@
+<div class="container mt-3">
+    <div class="text-left">
+        <h4>Featured Tournament</h4>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%">
+
+            <div class="details mt-2">
+            <p class="mb-1"><span>Oct 24, 2020</span> / <span>10.00 AM</span> / <span> Valorant</span></p>
+            <h5>Rocket league first Strike</h5>
+                <p class="d-flex justify-content-between mr-4"><span><i class="fa fa-minus-square-o" aria-hidden="true"></i> $35</span>
+                    <span><i class="fa fa-gamepad" aria-hidden="true"></i> 6v6</span>
+                    <span><i class="fa fa-desktop" aria-hidden="true"></i> PC</span>
+                    <span><i class="fa fa-users" aria-hidden="true"></i> 54/54</span>
+                </p>
+            </div>
+            
+        </div>
+
+    </ngx-slick-carousel>
+</div>
